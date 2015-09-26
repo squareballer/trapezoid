@@ -17,23 +17,28 @@
     <div class="panel-body">
       <div class="btn-group" data-toggle="buttons">
         <label type="button" class="btn btn-primary active">
-         <input type="radio" name="options" id="option1" autocomplete="off" checked></input>
+         <input type="radio" Id="case" value="0" autocomplete="off" checked></input>
          <img src="/images/Diablotek.jpg" alt="Diablotek" /> <br/>
          Diablotek Diamond Case
         </label>
         <label type="button" class="btn btn-primary">
-         <input type="radio" name="options" id="option2" autocomplete="off"></input>
+         <input type="radio" Id="case" value="1" autocomplete="off"></input>
          <img src="/images/Diablotek.jpg" alt="Diablotek" /> <br/>
          Diablotek Diamond Case
         </label>
         <label type="button" class="btn btn-primary">
-         <input type="radio" name="options" id="option2" autocomplete="off"></input>
+         <input type="radio" Id="case" value="2" autocomplete="off"></input>
          <img src="/images/Diablotek.jpg" alt="Diablotek" /> <br/>
          Diablotek Diamond Case
         </label>
       </div>
     </div>
   </div>
+  <script>
+  _each()
+  document.write(document.getElementById("case").value);
+
+  </script>
   <br/>
   <br/>
   <div class="panel panel-primary">
