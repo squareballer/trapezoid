@@ -16,28 +16,32 @@
     </div>
     <div class="panel-body">
       <div class="btn-group" data-toggle="buttons">
-        <label type="button" class="btn btn-primary active">
-         <input type="radio" Id="case" value="0" autocomplete="off" checked></input>
+        <label type="button" value=0 class="btn btn-primary active">
+         <input type="radio" Id="case" name="options" id="case1" autocomplete="off" checked></input>
          <img src="/images/Diablotek.jpg" alt="Diablotek" /> <br/>
          Diablotek Diamond Case
         </label>
-        <label type="button" class="btn btn-primary">
-         <input type="radio" Id="case" value="1" autocomplete="off"></input>
+        <label type="button" value=1 class="btn btn-primary">
+         <input type="radio" Id="case" name="options" id="case2" autocomplete="off"></input>
          <img src="/images/Diablotek.jpg" alt="Diablotek" /> <br/>
          Diablotek Diamond Case
         </label>
-        <label type="button" class="btn btn-primary">
-         <input type="radio" Id="case" value="2" autocomplete="off"></input>
+        <label type="button" value=2 class="btn btn-primary">
+         <input type="radio" Id="case"name="options" id="case3" autocomplete="off"></input>
          <img src="/images/Diablotek.jpg" alt="Diablotek" /> <br/>
          Diablotek Diamond Case
         </label>
       </div>
     </div>
   </div>
+  <span id="val">0</span>
+  <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
   <script>
-  _each()
-  document.write(document.getElementById("case").value);
-
+  $(function() {
+      $('.btn').click(function() {
+        $("#val").html($(this).attr('value'));
+      });
+  });
   </script>
   <br/>
   <br/>
