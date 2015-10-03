@@ -1,6 +1,28 @@
+
+
 <h1>Customize Your Desktop</h1>
 <br/>
 <br/>
 <%= render 'form' %>
 
 <%= link_to 'Back', orders_path %>
+
+
+<nav class="navbar navbar-default navbar-fixed-bottom">
+  <div class="container" >
+       <h3><b>Price as configured</b>: <span class="money">$<span id="price">5</span></span></h3><br/>
+  </div>
+</nav>
+
+ <script>
+
+ var c = 1;
+ var m = 1;
+ var r = 1;
+
+  $(function() {
+      $('.btn').click(function() {
+        $("#price").html(parseInt(c)+parseInt(m)+parseInt(r));
+      });
+  });
+ </script>

@@ -16,17 +16,17 @@
     </div>
     <div class="panel-body">
       <div class="btn-group" data-toggle="buttons">
-        <label type="button" value=0 class="btn btn-primary active">
+        <label type="button" value=0 class="btn c btn-primary active">
          <input type="radio" Id="case" name="options" id="case1" autocomplete="off" checked></input>
          <img src="/images/Diablotek.jpg" alt="Diablotek" /> <br/>
          Diablotek Diamond Case
         </label>
-        <label type="button" value=1 class="btn btn-primary">
+        <label type="button" value=1 class="btn c btn-primary">
          <input type="radio" Id="case" name="options" id="case2" autocomplete="off"></input>
          <img src="/images/Diablotek.jpg" alt="Diablotek" /> <br/>
          Diablotek Diamond Case
         </label>
-        <label type="button" value=2 class="btn btn-primary">
+        <label type="button" value=2 class="btn c btn-primary">
          <input type="radio" Id="case"name="options" id="case3" autocomplete="off"></input>
          <img src="/images/Diablotek.jpg" alt="Diablotek" /> <br/>
          Diablotek Diamond Case
@@ -34,34 +34,40 @@
       </div>
     </div>
   </div>
-  <span id="val">0</span>
-  <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+
+  <span id="val" case=3 mb=3></span>
+
   <script>
+ 
+
+
+
   $(function() {
-      $('.btn').click(function() {
-        $("#val").html($(this).attr('value'));
+      $('.c').click(function() {
+        c = $(this).attr('value');
       });
   });
   </script>
   <br/>
   <br/>
+
   <div class="panel panel-primary">
     <div class="panel-heading">
       <h3 class="panel-title">Motherboard</h3>
     </div>
     <div class="panel-body">
       <div class="btn-group" data-toggle="buttons">
-        <label type="button" class="btn btn-primary active">
+        <label type="button" value=1 class="btn m btn-primary active">
          <input type="radio" name="options" id="option1" autocomplete="off" checked></input>
          <img src="/images/600.jpg" width="256" height="256" alt="Diablotek" /> <br/>
          E33 Motherboard
         </label>
-        <label type="button" class="btn btn-primary">
+        <label type="button" value="2" class="btn m btn-primary">
          <input type="radio" name="options" id="option2" autocomplete="off"></input>
          <img src="/images/600.jpg" alt="Diablotek" /> <br/>
          E33 Motherboard
         </label>
-        <label type="button" class="btn btn-primary">
+        <label type="button" value="3" class="btn m btn-primary">
          <input type="radio" name="options" id="option2" autocomplete="off"></input>
          <img src="/images/600.jpg" alt="Diablotek" /> <br/>
          E33 Motherboard
@@ -69,6 +75,50 @@
       </div>
     </div>
   </div>
+
+  <script>
+  $(function() {
+      $('.m').click(function() {
+        m = $(this).attr('value');;
+      });
+  });
+  </script>
+  <br/>
+  <br/>
+  
+  <div class="panel panel-primary">
+    <div class="panel-heading">
+      <h3 class="panel-title">RAM Memory</h3>
+    </div>
+    <div class="panel-body">
+      <div class="btn-group" data-toggle="buttons">
+        <label type="button" value=1 class="btn r btn-primary active">
+         <input type="radio" name="options" id="option1" autocomplete="off" checked></input>
+         <img src="/images/600.jpg" width="256" height="256" alt="Diablotek" /> <br/>
+         E33 Motherboard
+        </label>
+        <label type="button" value="2" class="btn r btn-primary">
+         <input type="radio" name="options" id="option2" autocomplete="off"></input>
+         <img src="/images/600.jpg" alt="Diablotek" /> <br/>
+         E33 Motherboard
+        </label>
+        <label type="button" value="3" class="btn r btn-primary">
+         <input type="radio" name="options" id="option2" autocomplete="off"></input>
+         <img src="/images/600.jpg" alt="Diablotek" /> <br/>
+         E33 Motherboard
+        </label>
+      </div>
+    </div>
+  </div>
+
+  <script>
+  $(function() {
+      $('.r').click(function() {
+        r = $(this).attr('value');;
+      });
+  });
+  </script>
+  <br/>
   <br/>
 
 
